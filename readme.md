@@ -56,8 +56,9 @@ Variables Airflow :
 
 ### 3. Démarrage du pipeline
 
-1. Activer le DAG ars_epidemio_pipeline  
-2. Lancer un Run manuel  
+```
+docker compose exec airflow-webserver airflow dags backfill ars_epidemio_dag --start-date 2024-04-15 --end-date 2024-12-31
+```
 
 ---
 
@@ -116,3 +117,5 @@ Gestion des doublons :
 
 Pipeline complet :
 ingestion → traitement → stockage → analyse → rapport
+
+En raison du manque de data sur le dataset la récolte commence en avril 2024 et ne peut pas aller plus loin que 2025
