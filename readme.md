@@ -41,7 +41,7 @@ Password : postgres
 ---
 
 Variables Airflow :
-
+```
 {
   "archive_base_path": "/data/ars",
   "departements_occitanie": ["09","11","12","30","31","32","34","46","48"],
@@ -50,6 +50,7 @@ Variables Airflow :
   "seuil_alerte_zscore": 1.5,
   "seuil_urgence_zscore": 3.0
 }
+```
 
 ---
 
